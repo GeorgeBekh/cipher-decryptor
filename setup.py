@@ -7,7 +7,11 @@ setup (
 
        # Declare your packages' dependencies here, for eg:
        install_requires=[],
-
+       entry_points={
+         'console_scripts': [
+             'my_project = my_project.__main__:main'
+         ]
+       },
        # Fill in these to make your Egg ready for upload to
        # PyPI
        author='lamp',
